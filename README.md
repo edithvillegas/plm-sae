@@ -1,2 +1,1 @@
-# plm-sae
-Protein Language Model - Sparse Autoencoders
+# Protein Language Model - Sparse Autoencoders
