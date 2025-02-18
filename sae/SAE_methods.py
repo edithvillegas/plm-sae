@@ -12,6 +12,9 @@ import random
 import tqdm
 import json
 
+from huggingface_hub import PyTorchModelHubMixin
+
+
 #configuration parameteres =================================================
 def post_init_cfg(cfg):
     cfg["model_batch_size"] = cfg["batch_size"] // cfg["seq_len"] * 16
@@ -23,7 +26,9 @@ def post_init_cfg(cfg):
 DTYPES = {"fp32": torch.float32, "fp16": torch.float16, "bf16": torch.bfloat16}
 
 # Autoencoder Class ========================================================
-class AutoEncoder(nn.Module):
+class AutoEncoder(nn.Module, 
+                  PyTorchModelHubMixin):
+    
     def __init__(self, cfg):
         super().__init__()
         
