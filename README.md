@@ -1,7 +1,7 @@
 # Protein Language Model - Sparse Autoencoders
 ❗ Repository under construction. Additional information coming soon!
 
-This repository contains the accompanying code for the preprint [Interpreting and Steering Protein Language Models through Sparse Autoencoders](https://arxiv.org/abs/2502.09135). 
+This repository contains the accompanying code for the preprint [Interpreting and Steering Protein Language Models through Sparse Autoencoders](https://arxiv.org/abs/2502.09135) and instructions on how to use a Sparse Autoencoder trained on the ESM2-8M model. 
 
 ## Usage
 ### Extracting representations from the Sparse Autoencoder
